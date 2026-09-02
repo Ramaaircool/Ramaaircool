@@ -4,17 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Rama Aircool | AC Repair & Service</title>
+  <!-- SEO -->
+  <title>Rama Aircool | AC Repair & Service in Faridabad</title>
 
   <meta name="description"
-    content="Rama Aircool provides professional AC repair, AC servicing, installation and maintenance. Call 078272 39648 for AC service.">
+    content="Rama Aircool provides AC repair, AC servicing, AC installation and cooling solutions in Faridabad, Haryana. Call 07827239648 for professional AC service.">
 
-  <meta name="keywords"
-    content="AC repair, AC service, AC installation, AC servicing, air conditioner repair, Rama Aircool">
+  <meta name="robots"
+    content="index, follow, max-image-preview:large">
+
+  <link rel="canonical"
+    href="https://ramaaircool.github.io/Ramaaircool/">
 
   <meta name="theme-color" content="#0878d1">
 
+  <!-- Open Graph -->
+  <meta property="og:title"
+    content="Rama Aircool | AC Repair & Service in Faridabad">
+
+  <meta property="og:description"
+    content="Professional AC repair, servicing, installation and cooling solutions in Faridabad.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url"
+    content="https://ramaaircool.github.io/Ramaaircool/">
+
+  <meta property="og:image"
+    content="https://ramaaircool.github.io/Ramaaircool/hero-1%20(1).png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQER7SKSWL"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-HQER7SKSWL');
+  </script>
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Rama Aircool",
+    "description": "Professional AC repair, AC servicing, AC installation and cooling service in Faridabad, Haryana.",
+    "telephone": "+917827239648",
+    "url": "https://ramaaircool.github.io/Ramaaircool/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "D-13/6, Roshan Nagar",
+      "addressLocality": "Faridabad",
+      "addressRegion": "Haryana",
+      "postalCode": "121013",
+      "addressCountry": "IN"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Faridabad"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  }
+  </script>
+
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -26,10 +99,14 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #172235;
-      background: #f7fbff;
+      font-family: Arial, sans-serif;
+      color: #222;
       line-height: 1.6;
+      background: #fff;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     img {
@@ -37,29 +114,24 @@
       display: block;
     }
 
-    a {
-      text-decoration: none;
-    }
-
     .container {
-      width: 92%;
+      width: 90%;
       max-width: 1150px;
       margin: auto;
     }
 
-    /* ================= HEADER ================= */
+    /* HEADER */
 
     header {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
       position: sticky;
       top: 0;
-      z-index: 999;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid #e5edf5;
+      z-index: 1000;
     }
 
     .navbar {
-      min-height: 76px;
+      min-height: 75px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -67,21 +139,17 @@
     }
 
     .logo img {
-      width: 185px;
-      max-height: 58px;
-      object-fit: contain;
+      width: 170px;
     }
 
     .nav-links {
       display: flex;
-      align-items: center;
-      gap: 28px;
+      gap: 25px;
     }
 
     .nav-links a {
-      color: #27364a;
+      color: #222;
       font-weight: 600;
-      transition: 0.2s;
     }
 
     .nav-links a:hover {
@@ -90,476 +158,357 @@
 
     .call-btn {
       background: #0878d1;
-      color: white !important;
+      color: #fff;
       padding: 12px 18px;
-      border-radius: 10px;
-      font-weight: 700 !important;
-      box-shadow: 0 8px 20px rgba(8,120,209,0.22);
+      border-radius: 7px;
+      font-weight: 700;
     }
 
-    /* ================= HERO ================= */
+    /* HERO */
 
     .hero {
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 85% 20%, #d7f1ff 0, transparent 30%),
-        linear-gradient(135deg, #eaf7ff, #ffffff 60%, #effaff);
-      padding: 75px 0 65px;
+      padding: 80px 0;
+      background: linear-gradient(135deg,#f4faff,#fff);
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 55px;
       align-items: center;
+      gap: 50px;
     }
 
     .rating-badge {
       display: inline-flex;
-      align-items: center;
       gap: 8px;
-      background: white;
-      border: 1px solid #d7eaf8;
-      border-radius: 50px;
-      padding: 8px 15px;
-      color: #0878d1;
-      font-weight: 700;
-      box-shadow: 0 7px 20px rgba(0,70,120,0.07);
+      align-items: center;
+      background: #fff;
+      padding: 9px 14px;
+      border-radius: 30px;
+      box-shadow: 0 3px 15px rgba(0,0,0,.08);
+      margin-bottom: 20px;
+      font-weight: 600;
     }
 
     .stars {
-      color: #f5ae00;
+      color: #f5b400;
       letter-spacing: 2px;
     }
 
-    .hero h1 {
-      font-size: clamp(40px, 5vw, 64px);
-      line-height: 1.08;
-      margin: 20px 0;
-      color: #0c1c31;
+    h1 {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 20px;
     }
 
-    .hero h1 span {
+    h1 span {
       color: #0878d1;
     }
 
     .hero-text {
-      color: #5c6b7e;
       font-size: 18px;
-      max-width: 620px;
+      color: #555;
+      margin-bottom: 30px;
     }
 
     .hero-buttons {
       display: flex;
+      gap: 15px;
       flex-wrap: wrap;
-      gap: 13px;
-      margin-top: 28px;
     }
 
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      padding: 14px 21px;
-      border-radius: 11px;
-      font-weight: 800;
-      transition: 0.2s;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 7px;
+      font-weight: 700;
     }
 
     .btn-primary {
       background: #0878d1;
-      color: white;
-      box-shadow: 0 10px 25px rgba(8,120,209,0.25);
+      color: #fff;
     }
 
     .btn-whatsapp {
-      background: #20bd67;
-      color: white;
-      box-shadow: 0 10px 25px rgba(32,189,103,0.20);
-    }
-
-    .hero-image-box {
-      background: white;
-      border: 1px solid #dfebf5;
-      padding: 12px;
-      border-radius: 24px;
-      box-shadow: 0 25px 60px rgba(25,80,120,0.14);
+      background: #20b954;
+      color: #fff;
     }
 
     .hero-image-box img {
-      width: 100%;
-      height: 390px;
-      object-fit: cover;
-      border-radius: 17px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.12);
     }
 
-    /* ================= TRUST BAR ================= */
+    /* TRUST */
 
-    .trust {
-      background: white;
-      border-bottom: 1px solid #e8eff5;
+    .trust-bar {
+      padding: 25px 0;
+      background: #0878d1;
+      color: #fff;
     }
 
     .trust-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .trust-item {
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
       text-align: center;
-      padding: 22px 10px;
-      border-right: 1px solid #edf1f5;
     }
 
-    .trust-item:last-child {
-      border-right: none;
-    }
-
-    .trust-number {
+    .trust-item strong {
       display: block;
-      font-size: 27px;
-      font-weight: 800;
-      color: #0878d1;
+      font-size: 20px;
     }
 
-    .trust-label {
-      color: #6c7888;
-      font-size: 14px;
-    }
+    /* SECTIONS */
 
-    /* ================= COMMON SECTION ================= */
-
-    section {
-      padding: 85px 0;
+    section.common-section {
+      padding: 75px 0;
     }
 
     .section-title {
       text-align: center;
-      max-width: 720px;
-      margin: 0 auto 45px;
+      margin-bottom: 45px;
     }
 
     .section-title h2 {
-      font-size: 39px;
-      line-height: 1.15;
-      margin-bottom: 12px;
-      color: #102039;
+      font-size: 36px;
+      margin-bottom: 10px;
     }
 
     .section-title p {
-      color: #697688;
+      color: #666;
     }
 
-    /* ================= SERVICES ================= */
+    /* SERVICES */
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
     }
 
     .service-card {
-      background: white;
-      border: 1px solid #e1ebf4;
-      border-radius: 19px;
-      padding: 28px;
-      box-shadow: 0 10px 30px rgba(25,80,120,0.055);
-      transition: 0.25s;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      transition: .3s;
     }
 
     .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(25,80,120,0.11);
-    }
-
-    .service-icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 15px;
-      background: #e9f5ff;
-      color: #0878d1;
-      display: grid;
-      place-items: center;
-      font-size: 27px;
-      margin-bottom: 18px;
+      transform: translateY(-5px);
     }
 
     .service-card h3 {
-      font-size: 20px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      color: #0878d1;
     }
 
     .service-card p {
-      color: #687588;
-      font-size: 15px;
+      color: #666;
     }
 
-    /* ================= ABOUT ================= */
-
-    .about-section {
-      background: white;
-    }
+    /* ABOUT */
 
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 55px;
+      gap: 45px;
       align-items: center;
     }
 
-    .about-image img {
-      width: 100%;
-      height: 440px;
-      object-fit: cover;
-      border-radius: 23px;
-      box-shadow: 0 20px 50px rgba(25,80,120,0.13);
+    .about-grid img {
+      border-radius: 15px;
     }
 
     .about-content h2 {
-      font-size: 39px;
-      line-height: 1.15;
-      margin: 15px 0;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
 
     .about-content p {
-      color: #667486;
+      color: #555;
+      margin-bottom: 20px;
     }
 
-    .features {
-      margin-top: 23px;
-      display: grid;
-      gap: 13px;
+    .feature-list {
+      list-style: none;
     }
 
-    .feature {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      color: #435267;
+    .feature-list li {
+      margin-bottom: 10px;
       font-weight: 600;
     }
 
-    .check {
-      width: 27px;
-      height: 27px;
-      flex-shrink: 0;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: #0878d1;
-      color: white;
-      font-size: 14px;
-    }
-
-    /* ================= WHY US ================= */
+    /* WHY US */
 
     .why-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
     }
 
     .why-card {
-      background: white;
-      border: 1px solid #e3ecf4;
-      border-radius: 17px;
-      padding: 25px 20px;
       text-align: center;
-    }
-
-    .why-card .big-icon {
-      font-size: 32px;
-      margin-bottom: 12px;
+      padding: 25px;
+      background: #f7fbff;
+      border-radius: 10px;
     }
 
     .why-card h3 {
-      font-size: 18px;
-      margin-bottom: 5px;
+      color: #0878d1;
+      margin-bottom: 8px;
     }
 
-    .why-card p {
-      font-size: 14px;
-      color: #6b7788;
+    /* SERVICE AREA */
+
+    .service-area {
+      text-align: center;
+      background: #f5faff;
     }
 
-    /* ================= GALLERY ================= */
-
-    .gallery {
-      background: white;
+    .service-area p {
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+      font-size: 17px;
     }
+
+    /* GALLERY */
 
     .gallery-grid {
       display: grid;
-      grid-template-columns: 1.3fr 1fr 1fr;
-      gap: 16px;
+      grid-template-columns: repeat(4,1fr);
+      gap: 18px;
     }
 
     .gallery-grid img {
       width: 100%;
-      height: 260px;
+      height: 220px;
       object-fit: cover;
-      border-radius: 17px;
-      border: 1px solid #e2ebf3;
+      border-radius: 10px;
     }
 
-    .gallery-grid img:first-child {
-      height: 536px;
-      grid-row: span 2;
+    /* FAQ */
+
+    .faq {
+      max-width: 850px;
+      margin: auto;
     }
 
-    /* ================= CTA ================= */
-
-    .cta-wrapper {
-      padding-top: 0;
+    .faq-item {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
     }
+
+    .faq-item h3 {
+      color: #0878d1;
+      margin-bottom: 8px;
+    }
+
+    /* CTA */
 
     .cta {
-      background: linear-gradient(135deg, #056ec8, #0a91e9);
-      border-radius: 27px;
-      padding: 55px;
-      color: white;
-      position: relative;
-      overflow: hidden;
+      background: #0878d1;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
     }
 
     .cta h2 {
-      font-size: 40px;
-      line-height: 1.15;
-      max-width: 680px;
+      font-size: 36px;
+      margin-bottom: 15px;
     }
 
     .cta p {
-      max-width: 650px;
-      margin: 13px 0 25px;
-      color: #e7f5ff;
+      margin-bottom: 25px;
     }
 
-    .cta-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .cta .white-btn {
-      background: white;
-      color: #0878d1;
-    }
-
-    /* ================= CONTACT ================= */
+    /* CONTACT */
 
     .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
     }
 
     .contact-card {
-      background: white;
-      border: 1px solid #e2ebf3;
-      border-radius: 17px;
       padding: 25px;
-      display: flex;
-      gap: 17px;
-      align-items: center;
+      background: #f7fbff;
+      border-radius: 10px;
+      text-align: center;
     }
 
-    .contact-icon {
-      width: 54px;
-      height: 54px;
-      border-radius: 14px;
-      background: #eaf5ff;
+    .contact-card h3 {
       color: #0878d1;
-      display: grid;
-      place-items: center;
-      font-size: 24px;
-      flex-shrink: 0;
+      margin-bottom: 10px;
     }
 
-    .contact-card small {
-      display: block;
-      color: #788596;
-      margin-bottom: 2px;
-    }
-
-    .contact-card strong,
     .contact-card a {
-      color: #172c45;
-      font-size: 18px;
-      font-weight: 800;
+      color: #222;
+      font-weight: 600;
     }
 
-    .contact-card a:hover {
-      color: #0878d1;
-    }
-
-    /* ================= FOOTER ================= */
+    /* FOOTER */
 
     footer {
-      background: #0c1c2e;
-      color: #bfcbd8;
-      padding: 35px 0;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 30px 15px;
     }
 
-    .footer-grid {
-      display: flex;
-      justify-content: space-between;
-      gap: 25px;
-      align-items: center;
+    footer p {
+      margin-bottom: 5px;
     }
 
-    .footer-brand {
-      color: white;
-      font-size: 21px;
-      font-weight: 800;
-    }
-
-    footer a {
-      color: #82c9ff;
-    }
-
-    /* ================= FLOATING BUTTONS ================= */
+    /* FLOATING BUTTONS */
 
     .floating-buttons {
       position: fixed;
-      right: 17px;
-      bottom: 18px;
-      z-index: 999;
+      right: 18px;
+      bottom: 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
+      z-index: 999;
     }
 
     .floating-buttons a {
-      width: 55px;
-      height: 55px;
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: white;
-      font-size: 23px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+      color: #fff;
+      font-size: 22px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.2);
     }
 
-    .floating-call {
+    .float-whatsapp {
+      background: #20b954;
+    }
+
+    .float-call {
       background: #0878d1;
     }
 
-    .floating-whatsapp {
-      background: #20bd67;
-    }
+    /* MOBILE */
 
-    /* ================= MOBILE ================= */
+    @media(max-width:800px) {
 
-    @media (max-width: 900px) {
+      .navbar {
+        flex-wrap: wrap;
+        padding: 12px 0;
+      }
 
       .nav-links {
-        display: none;
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
       }
 
       .hero-grid,
@@ -567,124 +516,72 @@
         grid-template-columns: 1fr;
       }
 
-      .services-grid {
+      h1 {
+        font-size: 38px;
+      }
+
+      .trust-grid,
+      .services-grid,
+      .why-grid,
+      .contact-grid {
         grid-template-columns: 1fr 1fr;
       }
 
-      .why-grid {
+      .gallery-grid {
         grid-template-columns: 1fr 1fr;
-      }
-
-      .hero-image-box img {
-        height: 350px;
       }
     }
 
-    @media (max-width: 600px) {
-
-      .navbar {
-        min-height: 68px;
-      }
-
-      .logo img {
-        width: 155px;
-      }
+    @media(max-width:500px) {
 
       .call-btn {
-        padding: 9px 12px;
-        font-size: 13px;
+        display: none;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .section-title h2,
+      .about-content h2,
+      .cta h2 {
+        font-size: 28px;
+      }
+
+      .trust-grid,
+      .services-grid,
+      .why-grid,
+      .contact-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
       }
 
       .hero {
         padding: 50px 0;
       }
 
-      .hero h1 {
-        font-size: 40px;
-      }
-
-      .hero-text {
-        font-size: 16px;
-      }
-
-      .hero-image-box img {
-        height: 270px;
-      }
-
-      .trust-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .trust-item {
-        border-bottom: 1px solid #edf1f5;
-      }
-
-      section {
-        padding: 65px 0;
-      }
-
-      .section-title h2,
-      .about-content h2 {
-        font-size: 31px;
-      }
-
-      .services-grid,
-      .contact-grid,
-      .why-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .about-image img {
-        height: 300px;
-      }
-
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-grid img,
-      .gallery-grid img:first-child {
-        height: 260px;
-        grid-row: auto;
-      }
-
-      .cta {
-        padding: 35px 25px;
-      }
-
-      .cta h2 {
-        font-size: 31px;
-      }
-
-      .footer-grid {
-        flex-direction: column;
-        text-align: center;
+      section.common-section {
+        padding: 55px 0;
       }
     }
-  </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HQER7SKSWL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-HQER7SKSWL');
-</script>
+  </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 
 <header>
   <div class="container navbar">
 
     <a href="#home" class="logo">
-      <img src="cropped-Rama-Aircool-Logo (1).png" alt="Rama Aircool Logo">
+      <img
+        src="cropped-Rama-Aircool-Logo (1).png"
+        alt="Rama Aircool logo">
     </a>
 
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Primary navigation">
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#about">About</a>
@@ -692,7 +589,9 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="call-btn" href="tel:+917827239648">
+    <a
+      class="call-btn"
+      href="tel:+917827239648">
       📞 Call Now
     </a>
 
@@ -700,7 +599,7 @@
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -716,28 +615,30 @@
       </div>
 
       <h1>
-        Professional
-        <span>AC Repair</span>
-        & Cooling Service
+        AC Repair &amp; Service
+        <span>in Faridabad</span>
       </h1>
 
       <p class="hero-text">
-        Welcome to Rama Aircool — your reliable choice for
-        AC repair, servicing, installation and maintenance.
-        Get professional cooling solutions for your home,
-        office or business.
+        Welcome to Rama Aircool, your reliable local choice for
+        professional AC repair, AC servicing, installation and
+        cooling solutions in Faridabad, Haryana. Get reliable
+        AC service for your home, office or business.
       </p>
 
       <div class="hero-buttons">
 
-        <a class="btn btn-primary"
-           href="tel:+917827239648">
+        <a
+          class="btn btn-primary"
+          href="tel:+917827239648">
           📞 Call 078272 39648
         </a>
 
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/917827239648?text=Hello%20Rama%20Aircool,%20I%20need%20AC%20service."
-           target="_blank">
+        <a
+          class="btn btn-whatsapp"
+          href="https://wa.me/917827239648?text=Hello%20Rama%20Aircool,%20I%20need%20AC%20service."
+          target="_blank"
+          rel="noopener noreferrer">
           💬 WhatsApp Us
         </a>
 
@@ -750,7 +651,8 @@
 
       <img
         src="hero-1%20(1).png"
-        alt="Rama Aircool AC Repair Service">
+        alt="AC repair and service by Rama Aircool in Faridabad"
+        decoding="async">
 
     </div>
 
@@ -759,50 +661,50 @@
 </section>
 
 
-<!-- ================= TRUST ================= -->
+<!-- TRUST -->
 
-<div class="trust">
+<section class="trust-bar">
 
   <div class="container trust-grid">
 
     <div class="trust-item">
-      <span class="trust-number">4.9★</span>
-      <span class="trust-label">Google Rating</span>
+      <strong>4.9★</strong>
+      Google Rating
     </div>
 
     <div class="trust-item">
-      <span class="trust-number">93+</span>
-      <span class="trust-label">Customer Reviews</span>
+      <strong>93+</strong>
+      Customer Reviews
     </div>
 
     <div class="trust-item">
-      <span class="trust-number">24/7</span>
-      <span class="trust-label">Open 24 Hours</span>
+      <strong>24/7</strong>
+      Open 24 Hours
     </div>
 
     <div class="trust-item">
-      <span class="trust-number">Fast</span>
-      <span class="trust-label">Service Assistance</span>
+      <strong>Fast</strong>
+      Service Assistance
     </div>
 
   </div>
 
-</div>
+</section>
 
 
-<!-- ================= SERVICES ================= -->
+<!-- SERVICES -->
 
-<section id="services">
+<section class="common-section" id="services">
 
   <div class="container">
 
     <div class="section-title">
 
-      <h2>Our AC Services</h2>
+      <h2>AC Repair &amp; Services in Faridabad</h2>
 
       <p>
-        Complete air conditioning services to keep your
-        home and workplace cool and comfortable.
+        Professional AC repair, servicing and installation
+        solutions for homes, offices and businesses.
       </p>
 
     </div>
@@ -812,71 +714,59 @@
 
       <div class="service-card">
 
-        <div class="service-icon">🔧</div>
-
         <h3>AC Repair</h3>
 
         <p>
-          Professional AC repair for cooling problems,
-          water leakage, unusual noise and other common
-          AC issues.
+          Professional AC repair service for common air
+          conditioner problems and faults.
         </p>
 
       </div>
 
 
       <div class="service-card">
-
-        <div class="service-icon">❄️</div>
 
         <h3>AC Servicing</h3>
 
         <p>
-          Proper AC cleaning and servicing to maintain
-          cooling performance and improve everyday
-          operation.
+          Regular AC servicing to help maintain cooling,
+          performance and efficient operation.
         </p>
 
       </div>
 
 
       <div class="service-card">
-
-        <div class="service-icon">⚙️</div>
 
         <h3>AC Installation</h3>
 
         <p>
-          Professional AC installation with attention
-          to proper fitting, drainage and system setup.
+          AC installation support for residential and
+          commercial air conditioning systems.
         </p>
 
       </div>
 
 
       <div class="service-card">
-
-        <div class="service-icon">💧</div>
 
         <h3>AC Cooling Problem</h3>
 
         <p>
-          AC not cooling properly? We inspect the system
-          and help identify the actual cause of the problem.
+          AC inspection and repair assistance for cooling
+          problems and poor cooling performance.
         </p>
 
       </div>
 
 
       <div class="service-card">
-
-        <div class="service-icon">🏠</div>
 
         <h3>Home AC Service</h3>
 
         <p>
-          Convenient air conditioner repair and servicing
-          for residential cooling requirements.
+          Convenient AC repair and servicing solutions
+          for homes in Faridabad.
         </p>
 
       </div>
@@ -884,13 +774,11 @@
 
       <div class="service-card">
 
-        <div class="service-icon">🏢</div>
-
         <h3>Commercial AC Service</h3>
 
         <p>
-          AC service solutions for offices, shops and
-          other commercial spaces.
+          AC repair and servicing support for offices,
+          shops and commercial spaces.
         </p>
 
       </div>
@@ -902,68 +790,53 @@
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 
-<section class="about-section" id="about">
+<section class="common-section" id="about">
 
   <div class="container about-grid">
 
-    <div class="about-image">
+    <div>
 
       <img
         src="about.png"
-        alt="Rama Aircool AC Service">
+        alt="Rama Aircool AC service in Faridabad"
+        loading="lazy"
+        decoding="async">
 
     </div>
 
 
     <div class="about-content">
 
-      <div class="rating-badge">
-        ❄️ About Rama Aircool
-      </div>
-
-      <h2>
-        Reliable AC Service
-        You Can Count On
-      </h2>
+      <h2>Reliable AC Service You Can Count On</h2>
 
       <p>
-        Rama Aircool provides professional air conditioning
-        repair, servicing, installation and maintenance.
-        Our focus is simple — reliable service and better
-        cooling for your space.
+        Rama Aircool provides AC repair, servicing,
+        installation and maintenance services in Faridabad,
+        Haryana.
+      </p>
+
+      <p>
+        Whether your AC is not cooling properly, needs
+        servicing or requires installation assistance,
+        you can contact Rama Aircool by phone or WhatsApp.
       </p>
 
 
-      <div class="features">
+      <ul class="feature-list">
 
-        <div class="feature">
-          <span class="check">✓</span>
-          Professional AC repair & servicing
-        </div>
+        <li>✓ Professional AC repair &amp; servicing</li>
 
-        <div class="feature">
-          <span class="check">✓</span>
-          AC installation support
-        </div>
+        <li>✓ AC installation support</li>
 
-        <div class="feature">
-          <span class="check">✓</span>
-          Cooling problem inspection
-        </div>
+        <li>✓ Cooling problem inspection</li>
 
-        <div class="feature">
-          <span class="check">✓</span>
-          Phone & WhatsApp booking
-        </div>
+        <li>✓ Phone &amp; WhatsApp booking</li>
 
-        <div class="feature">
-          <span class="check">✓</span>
-          Open 24 hours
-        </div>
+        <li>✓ 24-hour service availability</li>
 
-      </div>
+      </ul>
 
     </div>
 
@@ -972,9 +845,9 @@
 </section>
 
 
-<!-- ================= WHY CHOOSE US ================= -->
+<!-- WHY CHOOSE US -->
 
-<section>
+<section class="common-section">
 
   <div class="container">
 
@@ -983,8 +856,7 @@
       <h2>Why Choose Rama Aircool?</h2>
 
       <p>
-        We aim to make AC repair and servicing simple,
-        convenient and reliable.
+        Reliable AC service focused on customer convenience.
       </p>
 
     </div>
@@ -993,27 +865,23 @@
     <div class="why-grid">
 
       <div class="why-card">
-        <div class="big-icon">⭐</div>
         <h3>4.9 Rated</h3>
-        <p>Highly rated business with 93+ reviews.</p>
+        <p>Highly rated by customers.</p>
       </div>
 
       <div class="why-card">
-        <div class="big-icon">🛠️</div>
-        <h3>Professional Service</h3>
-        <p>Focused on proper AC repair and maintenance.</p>
+        <h3>Professional</h3>
+        <p>Professional AC service assistance.</p>
       </div>
 
       <div class="why-card">
-        <div class="big-icon">⚡</div>
         <h3>Quick Assistance</h3>
-        <p>Contact us directly for your AC requirement.</p>
+        <p>Easy phone and WhatsApp booking.</p>
       </div>
 
       <div class="why-card">
-        <div class="big-icon">🕐</div>
         <h3>24 Hours</h3>
-        <p>Business profile shows availability 24 hours.</p>
+        <p>Service availability around the clock.</p>
       </div>
 
     </div>
@@ -1023,18 +891,42 @@
 </section>
 
 
-<!-- ================= GALLERY ================= -->
+<!-- SERVICE AREA -->
 
-<section class="gallery" id="gallery">
+<section class="common-section service-area">
 
   <div class="container">
 
     <div class="section-title">
 
-      <h2>Rama Aircool Gallery</h2>
+      <h2>AC Service Area</h2>
+
+    </div>
+
+    <p>
+      Rama Aircool provides AC repair, AC servicing,
+      installation and cooling solutions across Faridabad,
+      Haryana. Contact us to discuss your AC problem and
+      service requirements.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="common-section" id="gallery">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Rama Aircool AC Service Gallery</h2>
 
       <p>
-        Explore our AC service and cooling related work.
+        Our AC repair, servicing and installation work.
       </p>
 
     </div>
@@ -1044,19 +936,27 @@
 
       <img
         src="hero-2%20(2).png"
-        alt="Rama Aircool AC Service">
+        alt="Rama Aircool AC service work in Faridabad"
+        loading="lazy"
+        decoding="async">
 
       <img
         src="hero-1%20(1).png"
-        alt="AC Repair Service">
+        alt="AC repair service in Faridabad"
+        loading="lazy"
+        decoding="async">
 
       <img
         src="about.png"
-        alt="Rama Aircool">
+        alt="Rama Aircool AC repair service"
+        loading="lazy"
+        decoding="async">
 
       <img
         src="icon-install.png"
-        alt="AC Installation">
+        alt="AC installation service by Rama Aircool"
+        loading="lazy"
+        decoding="async">
 
     </div>
 
@@ -1065,36 +965,73 @@
 </section>
 
 
-<!-- ================= CTA ================= -->
+<!-- FAQ -->
 
-<section class="cta-wrapper">
+<section class="common-section">
 
   <div class="container">
 
-    <div class="cta">
+    <div class="section-title">
 
-      <h2>
-        AC Problem?
-        Get Your Cooling Back Today!
-      </h2>
+      <h2>Frequently Asked Questions</h2>
 
-      <p>
-        Call Rama Aircool or send us a WhatsApp message
-        and tell us about your AC problem.
-      </p>
+    </div>
 
-      <div class="cta-buttons">
 
-        <a class="btn white-btn"
-           href="tel:+917827239648">
-          📞 Call Now
-        </a>
+    <div class="faq">
 
-        <a class="btn white-btn"
-           href="https://wa.me/917827239648?text=Hello%20Rama%20Aircool,%20I%20need%20AC%20repair/service."
-           target="_blank">
-          💬 WhatsApp
-        </a>
+      <div class="faq-item">
+
+        <h3>
+          Do you provide AC repair in Faridabad?
+        </h3>
+
+        <p>
+          Yes. Rama Aircool provides AC repair and servicing
+          solutions in Faridabad, Haryana.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          Do you provide AC servicing and installation?
+        </h3>
+
+        <p>
+          Yes. We provide AC servicing and installation
+          assistance for homes, offices and commercial spaces.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          How can I book AC repair service?
+        </h3>
+
+        <p>
+          You can call 078272 39648 or send a WhatsApp
+          message to book or discuss your AC service requirement.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          Where is Rama Aircool located?
+        </h3>
+
+        <p>
+          Rama Aircool is located at D-13/6, Roshan Nagar,
+          Faridabad, Haryana 121013.
+        </p>
 
       </div>
 
@@ -1105,9 +1042,49 @@
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- CTA -->
 
-<section id="contact">
+<section class="cta">
+
+  <div class="container">
+
+    <h2>AC Problem? Get Your Cooling Back Today!</h2>
+
+    <p>
+      Call Rama Aircool or send us a WhatsApp message
+      and tell us about your AC problem.
+    </p>
+
+
+    <div class="hero-buttons"
+         style="justify-content:center;">
+
+      <a
+        class="btn"
+        style="background:#fff;color:#0878d1;"
+        href="tel:+917827239648">
+        📞 Call Now
+      </a>
+
+      <a
+        class="btn"
+        style="background:#20b954;color:#fff;"
+        href="https://wa.me/917827239648?text=Hello%20Rama%20Aircool,%20I%20need%20AC%20service."
+        target="_blank"
+        rel="noopener noreferrer">
+        💬 WhatsApp Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="common-section" id="contact">
 
   <div class="container">
 
@@ -1116,8 +1093,7 @@
       <h2>Contact Rama Aircool</h2>
 
       <p>
-        Need AC repair, servicing or installation?
-        Contact us directly.
+        Get in touch for AC repair, servicing and installation.
       </p>
 
     </div>
@@ -1127,65 +1103,37 @@
 
       <div class="contact-card">
 
-        <div class="contact-icon">📞</div>
+        <h3>📞 Phone</h3>
 
-        <div>
-
-          <small>Phone</small>
-
-          <a href="tel:+917827239648">
-            078272 39648
-          </a>
-
-        </div>
+        <a href="tel:+917827239648">
+          078272 39648
+        </a>
 
       </div>
 
 
       <div class="contact-card">
 
-        <div class="contact-icon">💬</div>
+        <h3>💬 WhatsApp</h3>
 
-        <div>
-
-          <small>WhatsApp</small>
-
-          <a
-            href="https://wa.me/917827239648"
-            target="_blank">
-            Chat on WhatsApp
-          </a>
-
-        </div>
+        <a
+          href="https://wa.me/917827239648?text=Hello%20Rama%20Aircool,%20I%20need%20AC%20service."
+          target="_blank"
+          rel="noopener noreferrer">
+          Chat on WhatsApp
+        </a>
 
       </div>
 
 
       <div class="contact-card">
 
-        <div class="contact-icon">🕐</div>
+        <h3>📍 Address</h3>
 
-        <div>
-
-          <small>Business Hours</small>
-
-          <strong>Open 24 Hours</strong>
-
-        </div>
-
-      </div>
-
-        <div class="contact-card">
-
-  <div class="contact-icon">📍</div>
-          <div>
-
-          <strong>D-13/6 Roshan Nagar, faridabad, Haryana-121013</strong>
-
-
-          </div>
-
-</div>
+        <p>
+          D-13/6, Roshan Nagar,<br>
+          Faridabad, Haryana 121013
+        </p>
 
       </div>
 
@@ -1196,52 +1144,45 @@
 </section>
 
 
-<!-- ================= FLOATING BUTTONS ================= -->
+<!-- FOOTER -->
+
+<footer>
+
+  <p><strong>Rama Aircool</strong></p>
+
+  <p>
+    Professional AC Repair &amp; Cooling Service in Faridabad
+  </p>
+
+  <p>
+    © 2026 Rama Aircool. All Rights Reserved.
+  </p>
+
+</footer>
+
+
+<!-- FLOATING BUTTONS -->
 
 <div class="floating-buttons">
 
   <a
-    class="floating-whatsapp"
+    class="float-whatsapp"
     href="https://wa.me/917827239648?text=Hello%20Rama%20Aircool,%20I%20need%20AC%20service."
     target="_blank"
-    aria-label="WhatsApp">
+    rel="noopener noreferrer"
+    aria-label="Contact Rama Aircool on WhatsApp">
     💬
   </a>
 
+
   <a
-    class="floating-call"
+    class="float-call"
     href="tel:+917827239648"
-    aria-label="Call">
+    aria-label="Call Rama Aircool">
     📞
   </a>
 
 </div>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-  <div class="container footer-grid">
-
-    <div>
-      <div class="footer-brand">
-        Rama Aircool
-      </div>
-
-      <div>
-        Professional AC Repair & Cooling Service
-      </div>
-    </div>
-
-
-    <div>
-      © 2026 Rama Aircool. All Rights Reserved.
-    </div>
-
-  </div>
-
-</footer>
 
 
 </body>
